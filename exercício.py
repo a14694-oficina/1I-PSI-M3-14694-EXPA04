@@ -1,7 +1,6 @@
 """
 Criar um programa em Python que permita ao departamento de manutenção de equipamentos informáticos gerir pedidos de forma eficiente, utilizando funções para modularidade e organização do código.
 """
-
 def registar_pedido(pedidos):
     id_pedido = len(pedidos) + 1
     descricao = input("Descrição do problema: ")
@@ -75,3 +74,8 @@ def main():
 if __name__ == "__main__":
     main()
 
+A função registar pedido faz com que o pedido feito pelo cliente seja enviado para a empresa e a empresa ficar a saber o que se passou com aquele eletrodoméstico.
+A função consultar faz com que o cliente consiga ver o pedido que fez e se o pedido já foi entregue á empresa ou ainda está pendente ou até o eletrodoméstico já esteja pronto a ser utilizado novamente. 
+A função atualizar estado faz com que a empresa atualize o estado do pedido do cliente e atualize para com que o cliente possa ver se o seu eletrodoméstico já esteja a ser arranjado ou até já tar pronto para o cliente o ir buscar.
+A função exibir os pedidos faz com que mostre todos os pedidos feitos pelo cliente e o estado dos pedidos.
+A função eliminar pedido faz com que caso o cliente tenha escrito alguma coisa mal ou tenha mandado sem querer o pedido e essa função apaga aquele pedido e o cliente já pode voltar a fazer o pedido
