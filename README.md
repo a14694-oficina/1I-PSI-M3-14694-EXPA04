@@ -3,6 +3,7 @@
 """
 Criar um programa em Python que permita ao departamento de manutenção de equipamentos informáticos gerir pedidos de forma eficiente, utilizando funções para modularidade e organização do código.
 """
+
 def registar_pedido(pedidos):
     id_pedido = len(pedidos) + 1
     descricao = input("Descrição do problema: ")
