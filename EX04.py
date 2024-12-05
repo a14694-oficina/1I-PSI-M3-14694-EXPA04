@@ -1,14 +1,14 @@
 """
 Criar um programa em Python que permita ao departamento de manutenção de equipamentos informáticos gerir pedidos de forma eficiente, utilizando funções para modularidade e organização do código.
 """
-def registar_pedido(pedidos):
+def registar_pedido(pedidos): # A função registar pedido faz com que o pedido feito pelo cliente seja enviado para a empresa e a empresa ficar a saber o que se passou com aquele eletrodoméstico.
     id_pedido = len(pedidos) + 1
     descricao = input("Descrição do problema: ")
     estado = "Pendente"
     pedidos[id_pedido] = {"descricao": descricao, "estado": estado}
     print(f"Pedido #{id_pedido} registado com sucesso!")
 
-def consultar_pedido(pedidos):
+def consultar_pedido(pedidos): # A função consultar faz com que o cliente consiga ver o pedido que fez e se o pedido já foi entregue á empresa ou ainda está pendente ou até o eletrodoméstico já esteja pronto a ser utilizado novamente. 
     id_pedido = int(input("ID do pedido a consultar: "))
     if id_pedido in pedidos:
         pedido = pedidos[id_pedido]
@@ -16,7 +16,7 @@ def consultar_pedido(pedidos):
     else:
         print("Pedido não encontrado.")
 
-def atualizar_estado(pedidos):
+def atualizar_estado(pedidos): # A função atualizar estado faz com que a empresa atualize o estado do pedido do cliente e atualize para com que o cliente possa ver se o seu eletrodoméstico já esteja a ser arranjado ou até já tar pronto para o cliente o ir buscar.
     id_pedido = int(input("ID do pedido a atualizar: "))
     if id_pedido in pedidos:
         novo_estado = input("Novo estado (Pendente/Em Andamento/Concluído): ")
@@ -28,7 +28,7 @@ def atualizar_estado(pedidos):
     else:
         print("Pedido não encontrado.")
 
-def eliminar_pedido(pedidos):
+def eliminar_pedido(pedidos): # A função eliminar pedido faz com que caso o cliente tenha escrito alguma coisa mal ou tenha mandado sem querer o pedido e essa função apaga aquele pedido e o cliente já pode voltar a fazer o pedido
     id_pedido = int(input("ID do pedido a eliminar: "))
     if id_pedido in pedidos:
         pedidos.pop(id_pedido)
@@ -36,7 +36,7 @@ def eliminar_pedido(pedidos):
     else:
         print("Pedido não encontrado.")
 
-def exibir_pedidos(pedidos):
+def exibir_pedidos(pedidos): # A função exibir os pedidos faz com que mostre todos os pedidos feitos pelo cliente e o estado dos pedidos.
     print("\nLista de Pedidos:")
     print("ID\tDescrição\t\tEstado")
     print("-" * 40)
