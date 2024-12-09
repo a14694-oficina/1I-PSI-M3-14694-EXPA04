@@ -4,7 +4,7 @@ Criar um programa em Python que permita ao departamento de manutenção de equip
 
 <h3> Requisitos </h3>
 
-""O programa deve:""
+**O programa deve:**
 
 Registar novos pedidos de manutenção.
 
@@ -16,7 +16,7 @@ Exibir uma lista geral de todos os pedidos e respetivos estados.
 
 <h3> Estrutura do programa </h3>
 
-""O programa será composto pelas seguintes funções:""
+**O programa será composto pelas seguintes funções:**
 
 registar_pedido(): Para adicionar novos pedidos.
 
