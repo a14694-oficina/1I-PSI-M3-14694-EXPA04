@@ -16,5 +16,3 @@ registar_pedido(): Para adicionar novos pedidos.
 consultar_pedido(): Para verificar o estado de um pedido específico.
 atualizar_estado(): Para alterar o estado de um pedido.
 exibir_pedidos(): Para exibir a lista geral de pedidos.
-
-<p> Guilherme Osório </p>
